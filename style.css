@@ -1,0 +1,166 @@
+body {
+margin:0;
+font-family:'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+.bg-main {
+background:
+linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+url('MainBackground.jpg');
+background-size:cover;
+}
+
+/* NAV */
+nav {
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#efe7dc;
+}
+
+/* HERO */
+.hero {
+display:flex;
+padding:60px;
+}
+
+.hero-left {flex:0.8;}
+
+.hero-right {
+flex:1.2;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-right img {
+width:90%;
+max-width:700px;
+border-radius:20px;
+}
+
+/* BUTTON */
+.btn,.btn-main {
+padding:10px 18px;
+background:#d6bfa7;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* CENTER */
+.center {
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+/* LOGIN */
+.auth-card {
+background:white;
+padding:40px;
+border-radius:15px;
+width:320px;
+text-align:center;
+}
+
+input,textarea {
+display:block;
+margin:10px auto;
+padding:10px;
+width:260px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.password-box {position:relative;}
+
+.eye {
+position:absolute;
+right:10px;
+top:50%;
+transform:translateY(-50%);
+cursor:pointer;
+}
+
+/* DASHBOARD */
+.split {
+display:flex;
+height:90vh;
+gap:20px;
+padding:20px;
+}
+
+.panel {
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:rgba(255,255,255,0.7);
+border-radius:20px;
+}
+
+/* FORM */
+.form-box {
+background:white;
+padding:30px;
+width:350px;
+margin:50px auto;
+border-radius:15px;
+}
+
+/* CAPSULE */
+#capsules {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.capsule {
+background:white;
+padding:15px;
+border-radius:12px;
+cursor:pointer;
+}
+
+.center-title {
+text-align:center;
+margin-top:20px;
+}
+
+/* POPUP */
+.popup {
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content {
+background:white;
+padding:20px;
+border-radius:15px;
+width:300px;
+}
+
+.close {
+position:absolute;
+right:10px;
+cursor:pointer;
+}
+
+.hidden {display:none;}
+
+footer {
+text-align:center;
+padding:20px;
+}
